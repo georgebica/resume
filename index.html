@@ -64,12 +64,19 @@
       position: fixed;
       inset: -25%;
       background:
-        repeating-linear-gradient(45deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 2px, transparent 2px, transparent 6px),
-        repeating-linear-gradient(-45deg, rgba(178,108,255,0.025) 0px, rgba(178,108,255,0.025) 1px, transparent 1px, transparent 7px);
-      opacity: 0.35;
+        repeating-linear-gradient(45deg, rgba(255,255,255,0.068) 0px, rgba(255,255,255,0.068) 1px, transparent 1px, transparent 2.2px),
+        repeating-linear-gradient(-45deg, rgba(178,108,255,0.056) 0px, rgba(178,108,255,0.056) 1px, transparent 1px, transparent 2.8px),
+        radial-gradient(circle at 20% 30%, rgba(255,255,255,0.22) 0px, rgba(255,255,255,0.22) 1px, transparent 1px) 0 0 / 1.8px 1.8px,
+        radial-gradient(circle at 70% 80%, rgba(214,170,255,0.16) 0px, rgba(214,170,255,0.16) 1px, transparent 1px) 0 0 / 2.8px 2.8px,
+        radial-gradient(circle at 48% 52%, rgba(255,255,255,0.16) 0px, transparent 1px) 0 0 / 2.3px 2.3px,
+        radial-gradient(circle at 62% 20%, rgba(168,85,247,0.13) 0px, transparent 1px) 0 0 / 2.1px 2.1px,
+        radial-gradient(circle at 37% 67%, rgba(255,255,255,0.1) 0px, transparent 1px) 0 0 / 2px 2px,
+        repeating-linear-gradient(90deg, rgba(255,255,255,0.038) 0px, rgba(255,255,255,0.038) 1px, transparent 1px, transparent 2.6px);
+      opacity: 0.68;
       pointer-events: none;
       z-index: -2;
-      animation: grainShift 10s steps(12) infinite;
+      animation: grainShift 5.8s steps(24) infinite;
+      filter: contrast(118%);
     }
 
     .ambient-particles {
